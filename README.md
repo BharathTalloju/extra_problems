@@ -1,2 +1,2 @@
 # extra_problems
-C class submission after November
+C class submissions after November

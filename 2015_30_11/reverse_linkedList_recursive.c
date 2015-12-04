@@ -8,7 +8,9 @@ typedef struct node{
 
 void reverse_linkedList(NODE* head,int flag){
 	
-	
+	if(head == NULL ){
+		return;
+	}
 	if((head-> next) == NULL){
 		return;
 	}

@@ -14,6 +14,7 @@
  
  NODE* merge_linked_lists(NODE *head1, NODE *head2){
   NODE* result = NULL;
+  NODE *temp,*w;
   
   if(head1 == NULL){
     return head2;
@@ -30,7 +31,7 @@
     result = head2;
     head2 = head2-> next;
   }
-  
+  temp = result;
   while(head1 && head2){
     if((head1-> value) <= (head2-> value)){
       result-> next = head1;
@@ -42,6 +43,13 @@
       result = head2;
       head2 = head2-> next;
     }
+    
+    printf("\nlist:  ");
+    w = temp;
+    while(w){
+      printf(" %d-> ",w-> value);
+      w = w-> next;
+    }
   }
   result-> next = NULL;
   if(head1){
@@ -50,6 +58,13 @@
   if(head2){
     result-> next = head1;
   }
+  printf("\nlist:  ");
+    w = temp;
+    while(w){
+      printf(" %d-> ",w-> value);
+      w = w-> next;
+    }
+  return result;
   
   
  }
@@ -80,6 +95,7 @@
   head = merge_linked_lists(head1,head2);
 	//printf("Median of list2 = %f",median_of_linkedList(head));
   
+  printf("\nResult:-\n");
   while(head){
     printf(" %d-> ",head-> value);
     head = head-> next;

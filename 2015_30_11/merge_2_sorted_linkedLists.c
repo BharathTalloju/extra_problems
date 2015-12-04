@@ -83,8 +83,6 @@
 	head1 = list1;
 	
 	
-	//printf("Median of list1 = %f\n",median_of_linkedList(head));
-	
 	for(i = 0 ; i < 5 ; i++){
 		(list2[i]).value = i;
 		(list2[i]).next = &(list2[i+1]);
@@ -93,7 +91,6 @@
 	head2 = list2;
 	
   head = merge_linked_lists(head1,head2);
-	//printf("Median of list2 = %f",median_of_linkedList(head));
   
   printf("\nResult:-\n");
   while(head){

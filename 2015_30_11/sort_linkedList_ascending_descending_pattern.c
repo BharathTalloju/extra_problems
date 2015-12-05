@@ -41,9 +41,7 @@ void swap_the_odd_ones(NODE *head){
 				walker = walker-> next;
 				
 				if(walker-> next == NULL){
-					
 					return;
-					
 				}
 			}
 			

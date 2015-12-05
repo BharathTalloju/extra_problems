@@ -18,6 +18,6 @@ Note : min of descending part is greater than max of ascending
 Ex: Input 1->2->7->20->15->10
 Output 1->2->7->10->15->20
 9 . Largest Contiguous Sum Array .
-Ex : 1,2,3,5,-10,20,40 O/P : 20,40 Sum : 60
+Ex : 1,2,3,5,-10,20,40 O/P : 20,40 Sum : 61
 Ex: 1 2 3 4 5 -2 -3 -4 -20 10 2 O/:P:1 2 3 4 5 Sum:15
 10. Print the last n lines of a file

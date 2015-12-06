@@ -21,3 +21,4 @@ Output 1->2->7->10->15->20
 Ex : 1,2,3,5,-10,20,40 O/P : 20,40 Sum : 61
 Ex: 1 2 3 4 5 -2 -3 -4 -20 10 2 O/:P:1 2 3 4 5 Sum:15
 10. Print the last n lines of a file
+11. Find the node where a loop is formed in a linked list.

@@ -20,4 +20,35 @@ NODE* swap_the_odd_ones(NODE *head){
 	
 	misplaced_node1 = head;
 	
+	while((misplaced_node1-> data) <= (misplaced_node1-> next-> data)){
+		predecessor_of_misplaced_node1 = misplaced_node1;
+		misplaced_node1 = misplaced_node1-> next;
+	}
+	
+	predecessor_of_misplaced_node2 = misplaced_node1;
+	misplaced_node2 = predecessor_of_misplaced_node2-> next;
+	min = misplaced_node2-> val;
+	
+	while(misplaced_node2){
+		if((misplaced_node2-> val) < min){
+			break;
+		}
+		predecessor_of_misplaced_node2 = misplaced_node2;
+		misplaced_node2 = misplaced_node2-> next;
+	}
+	
+	if(predecessor_of_misplaced_node1 == NULL){
+		// There are only two nodes in the list, swap them both.
+		misplaced_node2-> next = misplaced_node1;
+		misplaced_node1-> next = NULL;
+		
+		return misplaced_node2;
+	}
+	
+	predecessor_of_misplaced_node1-> next = misplaced_node2;
+	predecessor_of_misplaced_node2-> next = misplaced_node1;
+	temp = misplaced_node1-> next;
+	misplaced_node1-> next = misplaced_node2-> next;
+	misplaced_node2-> next = temp;
+	
 }

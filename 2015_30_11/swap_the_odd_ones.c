@@ -18,6 +18,10 @@ NODE* swap_the_odd_ones(NODE *head){
 	NODE *misplaced_node2 = NULL;
 	NODE *predecessor_of_misplaced_node2 = NULL;
 	
+	if(head == NULL){
+		return head;
+	}
+	
 	misplaced_node1 = head;
 	
 	while((misplaced_node1-> data) <= (misplaced_node1-> next-> data)){
@@ -51,4 +55,5 @@ NODE* swap_the_odd_ones(NODE *head){
 	misplaced_node1-> next = misplaced_node2-> next;
 	misplaced_node2-> next = temp;
 	
+	return head;
 }
